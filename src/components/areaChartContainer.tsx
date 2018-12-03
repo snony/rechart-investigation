@@ -24,16 +24,15 @@ class AreaChartContainer extends React.Component {
             <div>
                 <h1>This is associated with the Area</h1>
                 <AreaChart width={730} height={250} data={data}>
-                    <CartesianGrid strokeDasharray="3 3" />
+                    {/* <CartesianGrid strokeDasharray="3 3" /> */}
                     <defs>
                         <linearGradient id='colorValue' x1='0' y1='0' x2='0' y2='1'>
-                            <stop offset={off} stopColor='green' stopOpacity={0.8} />
-                            <stop offset={off} stopColor='#B22222' stopOpacity={0.8} />
+                            <stop offset={off} stopColor='green' stopOpacity={0.5} />
+                            <stop offset={off} stopColor='#B22222' stopOpacity={0.5} />
                         </linearGradient>
                     </defs>
                     <XAxis dataKey='name' />
                     <YAxis />
-                    {/* <Tooltip /> */}
                     <Area type="monotone" dataKey="value" fillOpacity={0.2} fill="url(#colorValue)" />
                 </AreaChart>
             </div>
@@ -47,11 +46,11 @@ const gradientOffset = () => {
     if (dataMax <= 0) {
         return 0
     }
-    else if (dataMin >= 0) {
+    if (dataMin >= 0) {
         return 1
     }
-    else {
-        return dataMax / (dataMax - dataMin);
-    }
+
+    return dataMax / (dataMax - dataMin);
+
 }
 export default AreaChartContainer
