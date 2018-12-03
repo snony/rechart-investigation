@@ -23,17 +23,17 @@ class AreaChartContainer extends React.Component {
         return (
             <div>
                 <h1>This is associated with the Area</h1>
-                <AreaChart width={730} height={250} data={data}>
-                    {/* <CartesianGrid strokeDasharray="3 3" /> */}
+                <AreaChart width={730} height={250} data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+                    <CartesianGrid strokeDasharray="3 3" />
                     <defs>
                         <linearGradient id='colorValue' x1='0' y1='0' x2='0' y2='1'>
-                            <stop offset={off} stopColor='green' stopOpacity={0.5} />
-                            <stop offset={off} stopColor='#B22222' stopOpacity={0.5} />
+                            <stop offset={off} stopColor='green' stopOpacity={1} />
+                            <stop offset={off} stopColor='#B22222' stopOpacity={1} />
                         </linearGradient>
                     </defs>
                     <XAxis dataKey='name' />
                     <YAxis />
-                    <Area type="monotone" dataKey="value" fillOpacity={0.2} fill="url(#colorValue)" />
+                    <Area type="monotone" dataKey="value" stroke="#000" fill="url(#colorValue)" />
                 </AreaChart>
             </div>
         )
