@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { LineChartContainer, AreaChartContainer } from './components'
+import { LineChartContainer, AreaChartContainer, BarChartContainer } from './components'
 import './App.css';
 
 class App extends Component {
@@ -9,6 +9,7 @@ class App extends Component {
         Hello World
         <LineChartContainer />
         <AreaChartContainer />
+        <BarChartContainer />
       </div>
     );
   }
