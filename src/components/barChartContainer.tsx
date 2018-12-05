@@ -38,7 +38,8 @@ class LineChartContainer extends React.Component {
         return (
             <div>
                 <BarChart
-                    width={900}
+                    stackOffset="sign"
+                    width={700}
                     height={260}
                     data={data}
                     margin={{ top: 5, right: 0, left: 0, bottom: 25 }}>
