@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { BarChart, Bar, XAxis, YAxis, Cell, CartesianGrid, Tooltip, Legend } from 'recharts'
+import { BarChart, Bar, XAxis, YAxis, Cell, CartesianGrid, Tooltip, Legend, Rectangle } from 'recharts'
 /**
  * The key thing to observe about rechart is that the lineChart is like the container of 
  */
@@ -27,10 +27,33 @@ const data = [
         "Text": "5 out of 50 throws",
         "Score": 0,
         "foo": 12,
-        "RespondentPercentage": 12,
+        "RespondentPercentage": 10,
         "Rank": 1
     },
 ];
+
+// const getPath = (x:(number|undefined), y:number, width:number, height:number) => {
+//     return `M${x},${y + height}
+//             C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3} ${x + width / 2}, ${y}
+//             C${x + width / 2},${y + height / 3} ${x + 2 * width / 3},${y + height} ${x + width}, ${y + height}
+//             Z`;
+//   };
+
+interface RombShapeProps{
+  fill?: string | null | undefined,
+  x?: number | undefined,
+  y?: number | undefined ,
+  width?: number | undefined,
+  height?: number | undefined,
+}
+
+const RombShape: React.SFC<RombShapeProps> = (props)=>{
+    // console.log(props)
+    const { fill, x, y, width, height } = props;
+    return (
+        <path d="M150 0 L75 200 L225 200 Z" />
+    )
+}
 
 class LineChartContainer extends React.Component {
 
@@ -55,8 +78,14 @@ class LineChartContainer extends React.Component {
                         dataKey="RespondentPercentage"
                         barSize={10}
                         fontFamily="sans-serif"
+                        fill="#8884d8"
+                        shape={RombShape}
                     >
-
+                        {
+                  data.map((entry, index) => (
+                    <Cell key={index} fill={entry.foo>=0 ? '#290a0a' : '#005599' }/>
+                  ))
+                }
                     </Bar>
                 </BarChart>
             </div>
