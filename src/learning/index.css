@@ -1,0 +1,150 @@
+body{
+    background-color:#2f3542;
+}
+
+.chart{
+    display: flex;
+    flex-direction: column;
+}
+
+.priceLabelWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -5px;
+}
+.barchartWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.barWrapper{
+    flex: 0.99;
+    vertical-align: middle;
+    margin: auto 0; 
+    color: white;
+}
+
+.bar{
+    height: 0.125rem;
+    background-color: green;
+    opacity: 1;
+    width: 100%;
+    position: relative;
+    top: 5px;
+}
+
+.label{
+width: 44px;
+height: 13px;
+opacity: 0.6;
+font-family: Lato;
+font-size: 11px;
+font-weight: normal;
+font-style: normal;
+font-stretch: normal;
+line-height: normal;
+letter-spacing: normal;
+text-align: center;
+color: #ffffff;
+}
+
+.originWrapper{
+    padding: 0px;
+    margin: 0px;
+}
+
+.originTick{
+    position: relative;
+    width: 1.6px;
+    height: 6.9px;
+    background-color: black;/*#444c5f;*/
+    margin: 0 auto;
+    top: 3px;
+}
+
+.origin{
+    margin: 0 auto;
+    display:  block;
+    height: 10px;
+    margin-top: 1px;
+    width: 5.9px;
+    height: 20px;
+    opacity: 0.6;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.82;
+    letter-spacing: normal;
+    text-align: center
+}
+
+.priceLabelOffsetWrapper{
+    flex: 0.99;
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+}
+
+.offset{
+    width: 75%;
+    /* background-color: blue; */
+}
+
+.price{
+    position: relative;
+    text-align: center;
+    right: 10px;
+    width: 25px;
+    height: 13px;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: red;/*#28c988;*/
+}
+.diamond{
+    background-color: red;/*#28c988;*/
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+}
+
+
+.priceDiamond{
+    flex: 0.99;
+    margin-bottom: -2px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    transform: translate(45%);
+}
+
+.price2{
+    flex: 1;
+    text-align: center;
+    width: 25px;
+    height: 13px;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: red;/*#28c988;*/
+}
+
+.diamond2{
+    display: block;
+    background-color: red;/*#28c988;*/
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+}
