@@ -1,0 +1,135 @@
+body{
+    background-color:#2f3542;
+}
+
+.chart{
+    /* display: flex;
+    flex-direction: column; */
+}
+.BarChart{
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.PriceDiamondWrapper{
+    flex: 0.99;
+    margin-bottom: -2px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    transform: translate(0%);  
+}
+
+.Price{
+    flex: 1;
+    text-align: center;
+    width: 25px;
+    height: 13px;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: red; 
+}
+
+.Diamond{
+    display: block;
+    background-color: red;
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);  
+}
+
+.LabelBarWrapper{
+    display: flex;
+    justify-content: space-between;  
+}
+
+.Label{
+    position: relative;
+    top: 17px;
+    width: 44px;
+    height: 13px;
+    opacity: 0.6;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff; 
+}
+
+.BarWrapper{
+    flex: 0.99;
+  vertical-align: middle;
+  margin: auto 0; 
+  color: white;
+}
+.Bar{
+    height: 0.125rem;
+    background-color: #444c5f;
+    opacity: 1;/*Initially values have opacity of 1*/
+    width: 100%;
+    position: relative;
+    top: 5px; 
+}
+
+.OriginTickWrapper{
+    padding: 0px;
+    margin: 0px; 
+}
+
+.OriginTick{
+    position: relative;
+    width: 1.6px;
+    height: 6.9px;
+    background-color: #444c5f;
+    margin: 0 auto;
+    top: 3px; 
+}
+
+.Origin{
+    margin: 0 auto;
+    display:  block;
+    height: 10px;
+    margin-top: 1px;
+    width: 5.9px;
+    height: 20px;
+    opacity: 0.6;
+    font-family: Lato;
+    font-size: 11px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.82;
+    letter-spacing: normal;
+    text-align: center 
+}
+
+/*
+<div className='BarChart'>
+                    <div className='LabelBarWrapper'>
+                        <div className="Label">EUSDY</div>
+                        <div className="BarWrapper">
+                            <div className="PriceDiamondWrapper">
+                                <div className="Price">20.5M</div>
+                                <div className="Diamond" />
+                            </div>
+                            <div className="Bar" />
+                            <div className="OriginTickWrapper">
+                                <div className="OriginTick" />
+                                <div className="Origin">0</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+*/

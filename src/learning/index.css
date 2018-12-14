@@ -11,7 +11,8 @@ body{
     display: flex;
     justify-content: space-between;
     margin-bottom: -5px;
-}
+} 
+
 .barchartWrapper {
     display: flex;
     justify-content: space-between;
@@ -19,9 +20,10 @@ body{
 
 .barWrapper{
     flex: 0.99;
-    vertical-align: middle;
-    margin: auto 0; 
     color: white;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
 }
 
 .bar{
@@ -49,34 +51,29 @@ color: #ffffff;
 }
 
 .originWrapper{
-    padding: 0px;
-    margin: 0px;
+    /* padding: 0px;
+    margin: 0px; */
 }
 
 .originTick{
-    position: relative;
+    /* position: relative; */
     width: 1.6px;
     height: 6.9px;
     background-color: black;/*#444c5f;*/
     margin: 0 auto;
-    top: 3px;
+    /* top: 3px; */
 }
 
 .origin{
     margin: 0 auto;
     display:  block;
     height: 10px;
-    margin-top: 1px;
+    margin-top: -1px;
     width: 5.9px;
     height: 20px;
     opacity: 0.6;
     font-family: Lato;
     font-size: 11px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.82;
-    letter-spacing: normal;
     text-align: center
 }
 
@@ -117,12 +114,11 @@ color: #ffffff;
 
 
 .priceDiamond{
-    flex: 0.99;
-    margin-bottom: -2px;
+    /* margin-bottom: -2px; */
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items:center;
-    transform: translate(45%);
+    transform: translate(0%);
 }
 
 .price2{
