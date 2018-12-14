@@ -21,15 +21,12 @@ body{
 .barWrapper{
     flex: 0.99;
     color: white;
-    justify-content: center;
-    align-items: center;
     padding-left: 10px;
 }
 
 .bar{
     height: 0.125rem;
     background-color: green;
-    opacity: 1;
     width: 100%;
     position: relative;
     top: 5px;
@@ -84,10 +81,6 @@ color: #ffffff;
     height: 20px;
 }
 
-.offset{
-    width: 75%;
-    /* background-color: blue; */
-}
 
 .price{
     position: relative;
@@ -114,25 +107,23 @@ color: #ffffff;
 
 
 .priceDiamond{
-    /* margin-bottom: -2px; */
     display: flex;
-    flex-direction: row;
-    align-items:center;
+}
+
+.foo{
+    flex: 0.999;
     transform: translate(0%);
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    flex-direction: column;
 }
 
 .price2{
-    flex: 1;
+    margin: 0 auto;
     text-align: center;
-    width: 25px;
-    height: 13px;
     font-family: Lato;
     font-size: 11px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: center;
     color: red;/*#28c988;*/
 }
@@ -142,5 +133,6 @@ color: #ffffff;
     background-color: red;/*#28c988;*/
     width: 6px;
     height: 6px;
+    margin: 0 auto;
     transform: rotate(45deg);
 }

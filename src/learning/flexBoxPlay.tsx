@@ -17,12 +17,13 @@ class FlexBoxPlay extends React.Component {
         return (
             <div className="chart">
                 <div className='priceDiamond'>
-
-                    <div className='label'>USDJPY</div>
-                    <div className="price2">
-                        240K
+                    <div className='label'/>
+                    <div className="foo">
+                        <div className="price2">
+                            240K
+                        </div>
+                        <div className="diamond2" />
                     </div>
-                    <div className="diamond2" />
                 </div>
                 <div className='barchartWrapper'>
                     <div className='label'>USDJPY</div>
