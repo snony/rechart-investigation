@@ -1,41 +1,25 @@
 import React from 'react';
 
+// A wrapper is something that convers something else
 
-
-{/* <div className="barchartWrapper">
-    <div className='label'></div>
-    <div className='priceDiamond'>
-        <div className="price2">
-            240K
-        </div>
-        <div className="diamond2" />
-    </div>
-</div> */}
 class FlexBoxPlay extends React.Component {
 
     render() {
         return (
             <div className="chart">
-                <div className='priceDiamond'>
-
-                    <div className='label'>USDJPY</div>
-                    <div className="price2">
-                        240K
-                    </div>
-                    <div className="diamond2" />
-                </div>
+                <div className="label">Label</div>
+                <div className="space" />
                 <div className='barchartWrapper'>
-                    <div className='label'>USDJPY</div>
-                    <div className='barWrapper'>
-                        <div className='bar'>
-                            <div className='originWrapper'>
-                                <div className="originTick"></div>
-                                <div className="origin">0</div>
-                            </div>
-                        </div>
+                    <div className="price">
+                        <span>240</span>
+                        <span className="diamond" />
+                    </div>
+                    <div className="bar" />
+                    <div className='originContainer'>
+                        <div className='tick' />
+                        <div className='origin'>0</div>
                     </div>
                 </div>
-
             </div>
 
         )

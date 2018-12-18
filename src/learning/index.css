@@ -2,145 +2,63 @@ body{
     background-color:#2f3542;
 }
 
+
 .chart{
     display: flex;
-    flex-direction: column;
-}
-
-.priceLabelWrapper{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: -5px;
-} 
-
-.barchartWrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
-.barWrapper{
-    flex: 0.99;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    padding-left: 10px;
-}
-
-.bar{
-    height: 0.125rem;
-    background-color: green;
-    opacity: 1;
-    width: 100%;
-    position: relative;
-    top: 5px;
 }
 
 .label{
-width: 44px;
-height: 13px;
-opacity: 0.6;
-font-family: Lato;
-font-size: 11px;
-font-weight: normal;
-font-style: normal;
-font-stretch: normal;
-line-height: normal;
-letter-spacing: normal;
-text-align: center;
-color: #ffffff;
+    background-color: red;
+    margin: auto 0;
 }
 
-.originWrapper{
-    /* padding: 0px;
-    margin: 0px; */
+.barchartWrapper{
+    background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
 }
 
-.originTick{
-    /* position: relative; */
-    width: 1.6px;
-    height: 6.9px;
-    background-color: black;/*#444c5f;*/
+.space{
+    flex: 0 0 20px;
+}
+.price{
+    /* transform: translate(-10%); */
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    align-content: center;
+    font-size: 11px;
+}
+
+.diamond{
+    width: 6px;
+    height: 6px;
+    transform: rotate(45deg);
+    display: block;
+    background-color: red;
     margin: 0 auto;
-    /* top: 3px; */
+}
+
+.bar{
+    width: 100%;
+    background-color: aqua;
+    height: 0.125rem;
+}
+
+.originContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tick{
+    width: 1.6px;
+    height: 5px;
+    background-color: black;
 }
 
 .origin{
-    margin: 0 auto;
-    display:  block;
-    height: 10px;
-    margin-top: -1px;
-    width: 5.9px;
-    height: 20px;
-    opacity: 0.6;
-    font-family: Lato;
     font-size: 11px;
-    text-align: center
-}
-
-.priceLabelOffsetWrapper{
-    flex: 0.99;
-    display: flex;
-    flex-direction: row;
-    height: 20px;
-}
-
-.offset{
-    width: 75%;
-    /* background-color: blue; */
-}
-
-.price{
-    position: relative;
-    text-align: center;
-    right: 10px;
-    width: 25px;
-    height: 13px;
-    font-family: Lato;
-    font-size: 11px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: red;/*#28c988;*/
-}
-.diamond{
-    background-color: red;/*#28c988;*/
-    width: 6px;
-    height: 6px;
-    transform: rotate(45deg);
-}
-
-
-.priceDiamond{
-    /* margin-bottom: -2px; */
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    transform: translate(0%);
-}
-
-.price2{
-    flex: 1;
-    text-align: center;
-    width: 25px;
-    height: 13px;
-    font-family: Lato;
-    font-size: 11px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: center;
-    color: red;/*#28c988;*/
-}
-
-.diamond2{
-    display: block;
-    background-color: red;/*#28c988;*/
-    width: 6px;
-    height: 6px;
-    transform: rotate(45deg);
 }
