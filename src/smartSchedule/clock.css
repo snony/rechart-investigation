@@ -1,0 +1,26 @@
+
+
+.clock{
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.subjectTitle{
+    text-align: center;
+}
+
+.watchWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.extraWatchInfo{
+    width: 100%;
+    height: 40%;
+    align-items: center;
+}

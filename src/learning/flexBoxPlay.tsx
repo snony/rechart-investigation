@@ -15,7 +15,7 @@ class FlexBoxPlay extends React.Component {
                         <span className="diamond" />
                     </div>
                     <div className="bar" />
-                    <div className='originContainer'>
+                    <div className='originTickWrapper'>
                         <div className='tick' />
                         <div className='origin'>0</div>
                     </div>
