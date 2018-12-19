@@ -1,0 +1,26 @@
+body{
+    background-color: #b3d4fc;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftNav{
+    display: flex; 
+    justify-content: space-between;
+    /* flex: 1; */
+}
+
+.liveRate{
+    flex: 1;
+}
+
+.toggleButton{
+    flex: 1;
+}
+
+.rightNav{
+    
+}
