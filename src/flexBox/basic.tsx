@@ -1,5 +1,6 @@
 import React from 'react'
 import FlexContainerProp from './flexContainer'
+import FlexItem from './flexItem'
 
 class BasicFlex extends React.Component {
 
@@ -11,7 +12,8 @@ class BasicFlex extends React.Component {
                     <li></li>
                     <li></li>
                 </ul>
-                <FlexContainerProp />
+                {/* <FlexContainerProp /> */}
+                <FlexItem />
             </div>
         )
     }

@@ -1,6 +1,9 @@
 # What is Flexbox?
 The flexbox model provides for an efficient way to layout, align, and distribute space among elements within your document -- even when the viewport and the size of your elements is dynamic or unknown.
 
+The following document was a subset of what has been mentioned at:
+(https://medium.freecodecamp.org/understanding-flexbox-everything-you-need-to-know-b4013d4dc9af)
+
 ###### variables here:
 * layout
 * align
@@ -98,6 +101,44 @@ The order property allows for reordering the flex items within a container.
 Basically, with the order property you can move flex-item from one position to another.
 
 This is done without affecting the source code. Which means the position of the flex items in the HTML source code isn't changed.
+
+###### Flex-grow and flex-shrink
+
+The beauty of flex items is being "flexible."
+
+The flex-grow and flex-shrink properties allow us to play around this "flexibility" even more.
+
+The flex-grow and flex-shrink properties control how much a flex-item should "grow" (extend) if there are extra spaces, or "shrink" if there are no extra spaces.
+
+They may take up any values ranging from 0 to any positive number.
+
+the ```flex-grow``` property is set by default to zero. The flex-item with flex-grow set to 1 will take all the available space as in it will grow as the window resize is continually being performed.
+
+the ```flex-shrink``` property is by default set to 1. 
+
+###### Flex-basis
+
+The flex-basis property specifies the initial size of a flex-item. before the flex-grow or flex-shrink properties adjust it's size to fit the container or not.
+
+The default value is ```flex-basis: auto```.  ```Flex-basis``` can take on any values you'd use on the normal width property. That is, ```percentages || ems || rems || pixels``` etc. 
+
+Note that when trying to set the basis property to a zero based value, use the unit also.
+
+###### The flex shorthand
+The ```flex``` shorthand allows you set the flex-grow, flex-shrink and flex-basis properties all at once. 
+
+
+###### Align-self
+The ```align-self``` property takes a step further in giving us so much control over flex items.
+
+What if you wanted to change the position of a **single** flex-item along the cross-axis, without affecting the neighboring flex-items?
+
+## Absolute and Relative flex-items.
+What are the differences between an absolute and relative flex-item?
+
+The major difference between these two is got to do with spacing and how they are computed.
+
+The spacing within a relative flex item is computed based on its content size. In an absolute flex item, it is based solely on "flex", not content.
 
 
 

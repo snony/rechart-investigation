@@ -41,7 +41,7 @@ li {
 }
 
 .alignItemsItem{
-    background-color: blue;
+    background-color: rgb(40, 40, 82);
 }
 
 .alignContent{
@@ -53,4 +53,25 @@ li {
 
 .alignContentItem{
     background-color: green;
+}
+
+.flexItem{
+    display: flex;
+    justify-content: space-between;
+}
+
+.grow{
+    flex: 1;
+    flex-grow: 1;
+    background-color: #8cacea;
+}
+
+.shrink{
+    flex: 1;
+    flex-shrink: 0;
+    flex-flow: 1;
+}
+
+.basis{
+    flex-basis: 20%;
 }
