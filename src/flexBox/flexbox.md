@@ -16,4 +16,15 @@ Start by defining the container of your element as a flex. and you do this as:
 
 The above two form the foundation to using flexbox.
 
+## Flex-container Properties
+There are 6 flex-containers properties and these are:
+1. **Flex-direction**
+2. **Flex-wrap**
+3. **Flex-flow**
+4. **Justify-content**
+5. **Align-items**
+6. **Align-content**
+
+
+
 
