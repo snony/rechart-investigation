@@ -25,6 +25,15 @@ There are 6 flex-containers properties and these are:
 5. **Align-items**
 6. **Align-content**
 
+####### Flex-direction
+This property controls the direction in which the flex-items are laid along the main axis.Either horizontally, vertically or reversed in both directions.
+
+These are described as **main-axis** and **cross axis**. The defaults are shown below
+
+[See image](assets/flexDirection.jpeg)
+
+
+
 
 
 
