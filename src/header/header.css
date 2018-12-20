@@ -10,7 +10,6 @@ body{
 .leftNav{
     display: flex; 
     justify-content: space-between;
-    /* flex: 1; */
 }
 
 .liveRate{

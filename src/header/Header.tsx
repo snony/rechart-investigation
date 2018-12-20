@@ -10,30 +10,28 @@ class Header extends React.Component {
                     <div className="liveRate">
                         Live Rates
                     </div>
-                    <div className="toggleButton">
-                        <span>
-                            <input type="radio" name="x" value="two" />
-                        </span>
-                        <span>
-                            <input type="radio" name="x" value="two" />
-                        </span>
-                        <span>
-                            <input type="radio" name="x" value="two" />
-                        </span>
-                        <span>
-                            <input type="radio" name="x" value="two" />
-                        </span>
-                    </div>
                 </div>
                 <div className="rightNav">
-                    This is with the svg stuff maybe?
-                    <div onContextMenu={(e) => { console.log(e) }}>
-                        Lorem Ipsum
-                    </div>
+                    <button>Normal</button>
+                    <button>WithGraph</button>
                 </div>
             </div>
         )
     }
 }
 
+// {/* <div className="toggleButton">
+//     <span>
+//         <input type="radio" name="x" value="two" />
+//     </span>
+//     <span>
+//         <input type="radio" name="x" value="two" />
+//     </span>
+//     <span>
+//         <input type="radio" name="x" value="two" />
+//     </span>
+//     <span>
+//         <input type="radio" name="x" value="two" />
+//     </span>
+// </div> */}
 export default Header
