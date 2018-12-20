@@ -32,8 +32,72 @@ These are described as **main-axis** and **cross axis**. The defaults are shown 
 
 [See image](assets/flexDirection.jpeg)
 
+This flex container property can only take the following values:
+```flex-direction: row || column || row-reverse || column-reverse;```
 
+###### Flex-wrap
+The flex-wrap property can take on any of three values:
+``` flex-wrap: wrap || nowrap || wrap-reverse ```
 
+The ``` wrap ``` value makes sure that when there is no enough space, the element should be wrapped to the next line.
+
+The ```nowrap``` value sets all flex-items in the main axis and do not wrap onto the next line.
+
+The ```wrap-reverse``` just reverses the result of ```wrap```.
+ 
+
+###### Flex-flow
+The flex-flow is a shorthand property which takes flex-direction and flex-wrap values.
+
+Used as follow: ``` flex-flow: (flex-direction) (flex-wrap)```
+
+###### Justify-content
+The justify content property defines how flex items are laid out on the main axis.
+
+The Justify-content has the following values:
+* flex-start
+* flex-end
+* center
+* space-between
+* space-around
+
+###### Align-items
+The align-items property somewhat similar to the justify-content property.
+
+```align-items``` can be set to any of these values:
+* flex-start
+* flex-end
+* center
+* stretch
+* baseline
+
+It defines how flex-items are laid out on the **cross axis**. This is the difference between the align-items property and justify-content.
+
+###### Align-content
+
+Above in the flex-wrap property section, we see that when we added more items, they wrapped around a multi-line flex container. 
+
+This property is used on multi-line flex-containers. It takes the same values as ```align-items``` apart from baseline.
+
+By definition, it controls how the flex-items are aligned in a multi-line flex.
+
+**OBS:** The variable to keep track of here is the fact that it works on a multi-line flex container meaning that if we have the flex-wrap proeprties set on the container in question than we should definitely use align-content. 
+
+## Flex-items Properties
+
+The flex items have the following properties:
+
+* Order
+* Flex-grow
+* Flex-shrink
+* Flex-basis
+
+###### Order
+The order property allows for reordering the flex items within a container.
+
+Basically, with the order property you can move flex-item from one position to another.
+
+This is done without affecting the source code. Which means the position of the flex items in the HTML source code isn't changed.
 
 
 

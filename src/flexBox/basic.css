@@ -14,4 +14,43 @@ li {
 .flexDirection{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.flexWrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flexFlow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.justifyContent{
+    display: flex;
+    justify-content: space-around;
+}
+
+.alignItems{
+    display: flex;
+    height: 400px;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.alignItemsItem{
+    background-color: blue;
+}
+
+.alignContent{
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+.alignContentItem{
+    background-color: green;
 }
