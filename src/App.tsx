@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 // import { FlexBoxPlay } from './learning'
 // import { Clock } from './smartSchedule'
 // import { Header } from './header'
+import { BasicFlex } from './flexBox'
 import './App.css';
 
 class App extends Component {
@@ -10,6 +11,7 @@ class App extends Component {
     return (
       <div className="App">
         {/* <Header /> */}
+        <BasicFlex />
       </div>
     );
   }
