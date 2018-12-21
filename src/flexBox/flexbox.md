@@ -140,5 +140,45 @@ The major difference between these two is got to do with spacing and how they ar
 
 The spacing within a relative flex item is computed based on its content size. In an absolute flex item, it is based solely on "flex", not content.
 
+###### So what is a relative flex-item?
+Given the following examples
+``` ul{display: flex;}```
 
+```li {flex: auto;}```
+
+With this, the initial width of the flex-items are automatically computed flex-basis: auto, and then they grow to fit the available space flex-grow:1. The size is based on the content contained within the flex-items.
+
+The above yields a relative flex-item.
+
+###### What is an absolute flex-item?
+instead of the ``` flex: auto``` as above, we only use ```flex: 1```
+
+The initial widths of the flex-items is zero ```flex-basis: 0```, and then they grow to fit the avaliable space. When there are two or more flex-items with zero based ```flex-basis``` values, they share the spacing available based on the ```flex-grow``` values.
+
+Now the widths aren't computed based on content size. The widths are based on the flex value specified.
+
+###### Auto-margin Alignment
+When you use ```margin: auto``` on flex-items, things can look quite weird.
+
+when you use ```margin: auto``` on a flex-item, the direction (left, right or both) that has the value ```auto``` will take up any empty spaces available.
+
+That's difficult to catch.
+
+[See code](./autoMargin.tsx)  for how the result would be.
+
+Note that when you use auto-margin alignment on a flex-item, the justify-content property no longer works.
+
+## What happens when you switch flex-direction?
+First of all things changes when you switch the flex direction from row to column, you change the directionality of your main and cross axis as demonstrated in the image [See image](asset/crossAxis.jpg)
+
+The way I view this one is how the variables such as main and cross axis are affected along with the properties that go along with them. So the flex properties are grouped or worked based on the flex-directions. 
+
+## Conclusion
+Keep track of the following variables:
+
+* main axis
+* cross axis
+* relative flex-items
+* absolute flex-items
+* Switching the direction of flex box
 

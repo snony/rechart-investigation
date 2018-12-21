@@ -1,7 +1,8 @@
 import React from 'react'
 import FlexContainerProp from './flexContainer'
 import FlexItem from './flexItem'
-
+import AbsoluteAndRelative from './absoluteRelative'
+import AutoMargin from './autoMargin'
 class BasicFlex extends React.Component {
 
     render() {
@@ -14,6 +15,8 @@ class BasicFlex extends React.Component {
                 </ul>
                 {/* <FlexContainerProp /> */}
                 <FlexItem />
+                <AbsoluteAndRelative />
+                <AutoMargin />
             </div>
         )
     }
