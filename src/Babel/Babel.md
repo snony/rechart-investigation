@@ -6,5 +6,3 @@ Here are the main things Babel can do for you:
 * Transform syntax
 * Polyfill features that are missing in your target environment (through ```@babel/polyfill```)
 * Source code transformations (codemods)
-
-
