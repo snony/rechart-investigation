@@ -9,6 +9,7 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-scripts": "^2.1.5",
+    "react-spring": "^8.0.9",
     "react-transition-group": "^1.2.1",
     "recharts": "^1.4.1",
     "source-map-loader": "^0.2.4",
