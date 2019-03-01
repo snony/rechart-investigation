@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Transition, animated } from 'react-spring/renderprops'
+import { Transition, animated, Spring } from 'react-spring/renderprops'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
@@ -23,13 +23,15 @@ const DivTwo = styled.div`
 
 const pages = [
     (style: React.CSSProperties) => (
-        <animated.div style={{ ...style, background: '#b3FFBD' }}>A</animated.div>
+        <animated.div style={{ ...style, background: '#b3FFBD', width: "400px", height: "400px" }}>
+            <div>Dangerous</div>
+        </animated.div>
     ),
     (style: React.CSSProperties) => (
-        <animated.div style={{ ...style, background: '#B2DBBF' }}>B</animated.div>
+        <animated.div style={{ ...style, background: '#B2DBBF', width: "400px", height: "400px" }}>B</animated.div>
     ),
     (style: React.CSSProperties) => (
-        <animated.div style={{ ...style, background: '#12DBBF' }}>C</animated.div>
+        <animated.div style={{ ...style, background: '#12DBBF', width: "400px", height: "400px" }}>C</animated.div>
     ),
 ]
 
@@ -51,22 +53,26 @@ interface Move {
 }
 
 const CardOne: React.FC = () => {
-    const [className, setClassName] = useState('moveIn')
+    const [className, setClassName] = useState(0)
     useEffect(() => {
 
         return () => {
-            setClassName("moveOut")
+            setClassName(0)
         }
     })
     return (
         <DivOne >
-            <button>Click Me</button>
+            <button onClick={() => setClassName(className === 0 ? 1 : 0)}>Click Me</button>
             <div>
                 Just for the content
         </div>
-            <div>
-                Another one
-        </div>
+            <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
+                {props => (
+                    <div style={props}>
+                        Another one
+                    </div>)
+                }
+            </Spring>
         </DivOne>)
 }
 
@@ -95,13 +101,15 @@ const Container: React.FC = () => {
             </div>
             <Transition
                 items={isCardOne}
-                from={{ opacity: 0, transform: 'translateY(-50%)', zIndex: -1 }}
-                enter={{ opacity: 1, transform: 'translateY(0%)', zIndex: 0 }}
-                leave={{ opacity: 0, transform: 'translateY(-50%)', zIndex: -1 }}
+                config={{ tension: 0, friction: 5, precision: 0.1 }}
+                from={{ opacity: 0, transform: 'translateY(-50%)' }}
+                enter={{ opacity: 1, transform: 'translateY(0%)' }}
+                leave={{ opacity: 0, transform: 'translateY(-50%)' }}
             >
                 {index => pages[index]}
             </Transition>
-            {/* <Foo /> */}
+            <CardOne />
+            <CardTwo />
         </Wrapper>
     )
 }
