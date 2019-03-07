@@ -101,7 +101,7 @@ const Container: React.FC = () => {
             </div>
             <Transition
                 items={isCardOne}
-                config={{ tension: 0, friction: 5, precision: 0.1 }}
+                config={{ tension: 100, friction: 1, precision: 0.1, }}
                 from={{ opacity: 0, transform: 'translateY(-50%)' }}
                 enter={{ opacity: 1, transform: 'translateY(0%)' }}
                 leave={{ opacity: 0, transform: 'translateY(-50%)' }}
