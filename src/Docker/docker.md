@@ -107,3 +107,12 @@ Used to start up multiple Docker containers at the same time. Automates some of 
 ```docker-compose up```: run all the container specified in the docker-compose.yml.
 
 docker-compose commands need to be run in the docker 
+
+**What was the purpose with volume?**
+A docker volume can be thought of as a port mappping you were setting up before. You are setting up a mapping from inside a container to outside the container.
+This is similar to using the port:port , redirect from port to port. 
+
+**What is a phase?**
+We can have several phase with docker. 
+
+###### Continuous Integration and Deployment with AWS
