@@ -33,7 +33,7 @@ This property controls the direction in which the flex-items are laid along the 
 
 These are described as **main-axis** and **cross axis**. The defaults are shown below
 
-[See image](../assets/flexDirection.jpeg)
+[See image](./assets/flexDirection.jpeg)
 
 This flex container property can only take the following values:
 ```flex-direction: row || column || row-reverse || column-reverse;```
